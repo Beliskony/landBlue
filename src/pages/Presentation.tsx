@@ -4,6 +4,8 @@ import CopyR from "../assets/components/footer/utilitaires/CopyR";
 import Barre from "../assets/components/header/Barre";
 import { SliderIntro } from "../assets/components/presentationPages/SlidersIntro";
 import TextEntree from "../assets/components/presentationPages/TextEntree";
+import PartitionText from "../assets/components/presentationPages/textEtTitre/PartitionText";
+import TitreSection from "../assets/components/presentationPages/textEtTitre/TitreSection";
 
 export default function Presentation() {
    return(
@@ -11,13 +13,13 @@ export default function Presentation() {
          <header>
             <Barre></Barre>
          </header>
-         <body className="w-full px-9 bg-black justify-center items-center">
+         <body className="w-full px-9 bg-black  justify-center items-center">
             {/*section1*/}
-            <section className="h-[500px] w-full flex flex-row  items-center">
+            <section className="h-[500px] w-full px-3 flex bg-black flex-row space-x-11 items-center">
                <div className="w-3/5">
                    <TextEntree></TextEntree>
                </div>
-                <div className="w-2/5">
+                <div className="w-2/5 justify-center">
                    <SliderIntro></SliderIntro>
                 </div>
             </section>
@@ -25,7 +27,7 @@ export default function Presentation() {
                <hr></hr>
 
             {/*section2*/}
-            <section className="h-[400px] w-full grid grid-cols-3 items-center gap-2 ">
+            <section className="h-[400px] w-full px-3 grid grid-cols-3 bg-black items-center gap-2 ">
                <div className="h-32  flex justify-center items-center bg-white rounded-xl hover:bg-[#F5CB5C]">
                   <CardDeSix imgSix="https://img.icons8.com/?size=100&id=keTRcEz9lVEz&format=png&color=000000"
                              titreCard="Travels anywhere"
@@ -71,6 +73,17 @@ export default function Presentation() {
 
             </section>
 
+            {/*section3*/}
+             <section className="h-[500px] flex flex-col w-full justify-evenly bg-[url('/src/assets/images/pexelsBG.jpg')] bg-cover
+              bg-black bg-opacity-50 bg-blend-overlay items-center my-2">
+                 <TitreSection titre="Luxury for all"
+                               descrip="Happy travelers get more fun than anybody in town ! Discory is in your hands"/>
+             
+
+                 <PartitionText texteUni="Ea modi architecto et omnis sapiente eos omnis ducimus. In possimus 
+                 reiciendis et odit amet et dolores necessitatibus."/>
+             
+             </section>
 
          </body>
          <footer>

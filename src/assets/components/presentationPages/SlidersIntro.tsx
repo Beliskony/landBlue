@@ -18,8 +18,8 @@ export function SliderIntro() {
     <div className="embla my-4" ref={emblaRef}>
       <div className="embla__container">
         {imagesSlides.map((src, index) => (
-              <div className="embla__slide  h-[450px]  object-cover" key={index}>
-                <img src={src} alt={`Slide ${index + 1}`} className="embla__slide  h-[450px]"/>
+              <div className="embla__slide  h-[450px] w-full object-cover" key={index}>
+                <img src={src} alt={`Slide ${index + 1}`} className="embla__slide  h-[450px] w-full items-center justify-center"/>
               </div>
         ))}
       </div>
